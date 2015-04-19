@@ -19,6 +19,7 @@ public class GameOfLife {
     		Animal current = AniIter.next();
     		current.getCell().resolveConflicts();
     	}
+    	//remove dead Animals from the queue
     }
     
     private void endTurn(){

@@ -31,7 +31,8 @@ public class GameBoard {
     	return putAnimal(newAnimal, X, Y, false);
     }
     
-    //This function still puts an animal down even if there is already in that cell
+    //This function may put an animal down even if there is already another in that cell
+    //if allowOverlap is true then dual occupation is allowed
     public boolean putAnimal(Animal newAnimal, int X, int Y, boolean allowOverlap) {
     	boolean success = false;
     	if (isXYValid(X, Y)){
